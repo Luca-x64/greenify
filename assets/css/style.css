@@ -1,0 +1,93 @@
+.dashboard-card {
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: box-shadow 0.2s;
+}
+.dashboard-card:hover {
+    box-shadow: 0 0 0 2px #19875433;
+    text-decoration: none;
+}
+.dashboard-icon {
+    font-size: 2.8em;
+    margin-bottom: 0.5em;
+}
+.icon-green { color: #198754 !important; }
+.icon-blue { color: #0d6efd !important; }
+.icon-orange { color: #fd7e14 !important; }
+.icon-purple { color: #6f42c1 !important; }
+.icon-red { color: #dc3545 !important; }
+.icon-teal { color: #20c997 !important; }
+.icon-yellow { color: #ffc107 !important; }
+.icon-gray { color: #6c757d !important; }
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+.footer-social svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
+    fill: #198754;
+    transition: fill 0.2s;
+}
+.footer-social a:hover svg {
+    fill: #145c32;
+}
+.fixed-nav-icons {
+    position: static;
+    background: none;
+    border-radius: 2em;
+    z-index: 1050;
+    box-shadow: none;
+    padding: 0;
+}
+.fixed-nav-icons .nav-link {
+    padding: 0.1em 0.2em;
+}
+.fixed-nav-icons svg {
+    width: 30px;
+    height: 30px;
+}
+
+#cart-fab {
+	position: fixed;
+	bottom: 120px;
+	right: 32px;
+	z-index: 2000;
+	background: #198754;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	cursor: pointer;
+}
+#cart-fab .badge {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-size: 1rem;
+}
+#cart-popup {
+	position: fixed;
+	bottom: 190px;
+	right: 32px;
+	width: 340px;
+	max-width: 95vw;
+	background: #fff;
+	border-radius: 1em;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+	z-index: 2100;
+	display: none;
+}
